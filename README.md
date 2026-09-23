@@ -39,31 +39,5 @@ Bottom line: the MA/V pairs strategy did not generate a profitable edge over thi
 
 Strategy volatility (11.41% annualized) was substantially lower than either underlying stock (MA: 24.12%, V: 22.75%) — evidence the long/short structure did strip out market direction, even though it didn't produce positive risk-adjusted returns here.
 
-What I'd Try Next
-Widen the candidate universe beyond payments/consumer-staples/banks
-Test a shorter or volatility-adaptive hedge-ratio window to respond faster to regime changes
-Size positions by z-score magnitude or spread volatility instead of a fixed ±1 unit position
-Repository Structure
-├── notebooks/
-│   └── pairs_trading_MA_V.ipynb      # Full analysis: selection, backtest, diagnostics
-├── data/
-│   ├── raw/                          # Raw price data (if saved)
-│   └── processed/
-│       ├── ma_v_daily_tableau.csv    # Daily price/spread/z-score/signal/returns
-│       ├── trades_tableau.csv        # Trade-level P&L and holding periods
-│       └── sensitivity_tableau.csv   # Z-score window x entry threshold Sharpe grid
-├── images/
-│   └── dashboard_preview.png         # Dashboard screenshot
-├── tableau/
-│   └── pairs_trading_dashboard.twbx  # Packaged Tableau workbook
-└── README.md
-Tools & Techniques
-
 Python: pandas, NumPy, statsmodels (ADF test, Engle-Granger cointegration, rolling OLS), yfinance, matplotlib, seaborn Statistics: stationarity testing, cointegration testing, z-score standardization, walk-forward (out-of-sample) validation Visualization: Tableau (interactive dashboard with train/test comparison, trade return chart, Sharpe sensitivity heatmap, holding period scatter)
 
-How to Run
-bash
-pip install yfinance pandas numpy statsmodels matplotlib seaborn
-jupyter notebook notebooks/pairs_trading_MA_V.ipynb
-
-Data is pulled live via yfinance, so re-running the notebook will refresh results with the latest available prices.
