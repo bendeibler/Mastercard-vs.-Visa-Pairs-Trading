@@ -85,11 +85,11 @@ Annualized volatility
 
 The strategy was subjected to several tests designed to determine whether the historical results were robust:
 
-### Transaction Costs
+#### Transaction Costs
 
 10 basis points applied when positions change
 
-### Walk-Forward Validation
+#### Walk-Forward Validation
 
 70% in-sample
 
@@ -97,7 +97,7 @@ The strategy was subjected to several tests designed to determine whether the hi
 
 Entry threshold selected using only the in-sample period
 
-### Parameter Sensitivity
+#### Parameter Sensitivity
 
 5 z-score windows
 
@@ -105,7 +105,7 @@ Entry threshold selected using only the in-sample period
 
 25 total parameter combinations
 
-### Benchmark Comparison
+#### Benchmark Comparison
 
 MA buy-and-hold
 
