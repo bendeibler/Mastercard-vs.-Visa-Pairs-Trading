@@ -1,5 +1,5 @@
 # Pairs-Trading-Ma-V
-A market-neutral pairs trading strategy built from scratch in Python — from statistical pair selection through backtesting, out-of-sample validation, and a Tableau dashboard.
+
 
 <img width="1668" height="790" alt="image" src="https://github.com/user-attachments/assets/ee11ade6-68ff-4f44-aef4-974950314884" />
 
@@ -164,23 +164,23 @@ The project therefore emphasizes research discipline over backtest optimization:
 
 ## Tableau Dashboard
 
-Backtest outputs were exported to CSV and visualized in Tableau to create a dashboard covering:
+- Backtest outputs were exported to CSV and visualized in Tableau to create a dashboard covering:
 
-Cumulative strategy performance
+- Cumulative strategy performance
 
-MA and V buy-and-hold performance
+- MA and V buy-and-hold performance
 
-Individual trade returns
+- Individual trade returns
 
-Train vs. test performance
+- Train vs. test performance
 
-Sharpe-ratio parameter sensitivity
+- Sharpe-ratio parameter sensitivity
 
-Trade holding periods
+- Trade holding periods
 
-Win/loss distribution
+- Win/loss distribution
 
-Strategy risk metrics
+- Strategy risk metrics
 
 
 ### Technologies
@@ -199,33 +199,33 @@ Strategy risk metrics
 - seaborn
 
 ### Statistical & Quantitative Methods
-OLS regression
+- OLS regression
 
-Rolling hedge ratios
+- Rolling hedge ratios
 
-Augmented Dickey-Fuller testing
+- Augmented Dickey-Fuller testing
 
-Engle-Granger cointegration
+- Engle-Granger cointegration
 
-Z-score standardization
+- Z-score standardization
 
-Mean-reversion signals
+- Mean-reversion signals
 
-Walk-forward / out-of-sample validation
+- Walk-forward / out-of-sample validation
 
-Transaction-cost modeling
+- Transaction-cost modeling
 
-Sharpe ratio
+- Sharpe ratio
 
-Maximum drawdown
+- Maximum drawdown
 
-Parameter sensitivity analysis
+- Parameter sensitivity analysis
 
 ### Visualization
-Tableau
+- Tableau
 
-Time-series analysis
+- Time-series analysis
 
-Parameter heatmaps
+- Parameter heatmaps
 
-Trade-level visualization
+- Trade-level visualization
