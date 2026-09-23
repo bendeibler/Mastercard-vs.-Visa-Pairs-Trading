@@ -24,8 +24,11 @@ Tested correlation and Engle-Granger cointegration across a candidate universe r
 Candidate pairs included:
 
 KO / PEP
+
 MA / V
+
 HD / LOW
+
 JPM / BAC
 
 Across 15 tested combinations, MA/V was the only pair to pass the cointegration test, with a p-value of 0.0476.
@@ -47,7 +50,9 @@ log(MA) − hedge_ratio × log(V)
 The spread was standardized using a 30-day rolling z-score.
 
 Enter long spread when the z-score reaches -2
+
 Enter short spread when the z-score reaches +2
+
 Exit positions as the spread reverts toward zero
 
 Trading signals were lagged by one day to ensure that information from the current trading period was not used to generate that same period's return.
@@ -59,13 +64,21 @@ The strategy compounds daily returns and evaluates both portfolio-level and trad
 The backtest includes:
 
 28 discrete trades
+
 Daily strategy returns
+
 Cumulative returns
+
 Trade-level P&L
+
 Win rate
+
 Sharpe ratio
+
 Maximum drawdown
+
 Holding periods
+
 Annualized volatility
 
 ### 5. Robustness & Validation
@@ -79,29 +92,34 @@ The strategy was subjected to several tests designed to determine whether the hi
 ### Walk-Forward Validation
 
 70% in-sample
+
 30% out-of-sample
+
 Entry threshold selected using only the in-sample period
 
 ### Parameter Sensitivity
 
 5 z-score windows
+
 5 entry thresholds
+
 25 total parameter combinations
 
 ### Benchmark Comparison
 
 MA buy-and-hold
+
 V buy-and-hold
 
 
 
-
 ## Key Results
-Metric	Gross	Net of Costs
-Sharpe Ratio	-0.05	-0.14
-Total Return	-6.56%	-11.55%
-Maximum Drawdown	-25.12%	—
-Win Rate	49.78%	—
+| Metric	| Gross | 	Net of Costs |
+|--:|--:|--:|
+| Sharpe Ratio | -0.05 | -0.14 |
+| Total Return |	-6.56% | 	-11.55% |
+| Maximum Drawdown |	-25.12%	| - |
+| Win Rate |	49.78% |	— |
 
 ### Trade-Level Results
 Metric	Result
