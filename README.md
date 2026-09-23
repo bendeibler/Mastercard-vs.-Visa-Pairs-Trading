@@ -1,7 +1,7 @@
 # Pairs-Trading-Ma-V
 A market-neutral pairs trading strategy built from scratch in Python — from statistical pair selection through backtesting, out-of-sample validation, and a Tableau dashboard.
 
-<img width="1622" height="801" alt="image" src="https://github.com/user-attachments/assets/40721ecb-ad79-41a9-9129-aad5b8e5cde6" />
+<img width="1647" height="793" alt="image" src="https://github.com/user-attachments/assets/bb110320-a5a2-4643-9db6-d8367572d3c4" />
 
 
 Overview
