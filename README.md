@@ -144,6 +144,7 @@ The out-of-sample Sharpe of -0.83 was substantially worse than the full-sample g
 The strategy produced 11.41% annualized volatility, substantially below the individual stocks:
 
 MA: 24.12%
+
 V: 22.75%
 
 This demonstrates that the long/short structure reduced directional exposure, even though the strategy did not generate positive risk-adjusted returns over the tested period.
@@ -152,7 +153,9 @@ This demonstrates that the long/short structure reduced directional exposure, ev
 
 The MA/V pairs strategy did not produce a profitable trading edge over the tested sample.
 
+
 Importantly, the analysis demonstrates why simply finding a statistically related pair is not enough to establish a viable trading strategy. Although MA/V passed the cointegration test at p = 0.0476, the relationship produced weak trading performance, deteriorated out-of-sample, and remained unprofitable across the majority of tested parameter combinations.
+
 
 The project therefore emphasizes research discipline over backtest optimization: testing the hypothesis, controlling for look-ahead bias, incorporating realistic trading costs, validating on unseen data, stress-testing parameters, and documenting the negative result.
 
@@ -164,39 +167,65 @@ The project therefore emphasizes research discipline over backtest optimization:
 Backtest outputs were exported to CSV and visualized in Tableau to create a dashboard covering:
 
 Cumulative strategy performance
+
 MA and V buy-and-hold performance
+
 Individual trade returns
+
 Train vs. test performance
+
 Sharpe-ratio parameter sensitivity
+
 Trade holding periods
+
 Win/loss distribution
+
 Strategy risk metrics
 
+
 ### Technologies
-Python
-pandas
-NumPy
-statsmodels
-yfinance
-matplotlib
-seaborn
+- Python
+
+- pandas
+
+- NumPy
+
+- statsmodels
+
+- yfinance
+
+- matplotlib
+
+- seaborn
 
 ### Statistical & Quantitative Methods
 OLS regression
+
 Rolling hedge ratios
+
 Augmented Dickey-Fuller testing
+
 Engle-Granger cointegration
+
 Z-score standardization
+
 Mean-reversion signals
+
 Walk-forward / out-of-sample validation
+
 Transaction-cost modeling
+
 Sharpe ratio
+
 Maximum drawdown
+
 Parameter sensitivity analysis
 
 ### Visualization
 Tableau
-Interactive dashboards
+
 Time-series analysis
+
 Parameter heatmaps
+
 Trade-level visualization
