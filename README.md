@@ -122,13 +122,14 @@ V buy-and-hold
 | Win Rate |	49.78% |	— |
 
 ### Trade-Level Results
-Metric	Result
-Number of Trades	28
-Average Trade P&L	-0.49%
-Best Trade	+5.14%
-Worst Trade	-8.67%
-Out-of-Sample Sharpe	-0.83
-Out-of-Sample Return	-17.19%
+| Metric |	Result |
+|--:|--:|
+| Number of Trades |	28 |
+| Average Trade P&L |	-0.49% |
+| Best Trade |	+5.14% |
+| Worst Trade |	-8.67% |
+| Out-of-Sample Sharpe |	-0.83 |
+| Out-of-Sample Return |	-17.19% |
 
 ### Parameter Sensitivity
 
